@@ -7,9 +7,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class MainController {
     //http://localhost/8080/main
     //http://localhost/8080/
-    @GetMapping({"main","/"})
-    public String mainPage(){
+    @GetMapping({"main", "/"})
+    public String mainPage() {
         return "mainPage";
 
+    }
+
+    @GetMapping("/link")
+    public String linkPage(){
+        return  "mainPage";
     }
 }
